@@ -1,0 +1,131 @@
+/* Page 2 et suivantes */
+
+header i {
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    padding-top: 2.4rem;
+    padding-left: 1.5rem;
+    top: 0;
+    left: 0;
+}
+
+
+/* Image accueuil */
+
+.image_pres_resto img {
+    max-width: 100%;
+}
+
+
+/* CARTE MENU page 2 et suivantes */
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(-33px);
+    border-radius: 33px 33px 0 0;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menus .header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.menus .header_menu i {
+    padding-top: 0.5rem;
+}
+
+.menus .header_menu h3 {
+    font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menus .header_menu .animation_coeur_menu {
+    margin: 0 25px;
+    padding: 22px;
+}
+
+.menus .choix-plat {
+    margin-bottom: 40px;
+}
+
+.menus .choix-plat .trait_separation {
+    width: 60px;
+    height: 2px;
+    margin: 5px 0 15px 0;
+    background-color: #99e2d0;
+}
+
+.menus .choix-plat .plat {
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 15px;
+    opacity: 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.20);
+}
+
+.menus .choix-plat .precisions_plat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menus .choix-plat .nom_plat {
+    font-weight: bold;
+    line-height: 1.8rem;
+    width: calc(100% - 60px);
+}
+
+.menus .choix-plat .accompagnement_plat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menus .choix-plat .accompagnement_plat {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.menus .choix-plat .prix_plat_menu {
+    font-weight: bold;
+}
+
+
+/* Page 2 */
+
+.menus aside {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 55px 0;
+}
+
+.button_menu {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 40px;
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+    padding: 5%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}

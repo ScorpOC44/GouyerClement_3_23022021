@@ -1,0 +1,219 @@
+/* Animation accueil */
+
+.chargement_accueil {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #99E2D0;
+    animation: fond_couleur 1.115s ease-in-out forwards;
+    z-index: 1000;
+}
+
+.chargement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #9356dc;
+    border-radius: 50%;
+    animation: cercle 1.115s ease-in-out forwards;
+}
+
+@keyframes fond_couleur {
+    0% {
+        opacity: 0.9;
+        visibility: visible;
+    }
+    50% {
+        opacity: 0.5;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes cercle {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+/* Animation coeur */
+
+.coeur1
+/* responsable couleur */
+
+{
+    position: absolute;
+    transform: scale(0);
+    font-size: 25px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    color: #9356DC;
+    z-index: 1;
+}
+
+.coeur2
+/* responsable grossissement */
+
+{
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    z-index: 2;
+}
+
+.coeur2:hover {
+    transition: transform 0.20s ease-in-out;
+    animation: aggrandir 0.20s;
+}
+
+.coeur2:hover+.coeur1 {
+    transition: transform 0.20s ease-in-out;
+    animation: couleur 0.20s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes couleur
+/* la couleur ^^ */
+
+{
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes aggrandir
+/* Coeur grossit  */
+
+{
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Animation carte resto */
+
+.menus .choix-plat .plat
+/* latence apparition menu */
+
+{
+    animation: decalage_carte 0.88s cubic-bezier(0, 0, 1, 1) forwards;
+}
+
+.menus .choix-plat .plat_1 {
+    animation-delay: 0.22s;
+}
+
+.menus .choix-plat .plat_2 {
+    animation-delay: 0.33s;
+}
+
+.menus .choix-plat .plat_3 {
+    animation-delay: 0.55s;
+}
+
+.menus .choix-plat .plat_4 {
+    animation-delay: 0.88s;
+}
+
+
+/* Menu globaux */
+
+.menus .choix-plat .animation_check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transform: translateX(60px);
+}
+
+.menus .choix-plat .partie_validation_turquoise {
+    width: 55px;
+    height: 100%;
+    background: #99e2d0;
+    /* Couleur partie mouvante */
+}
+
+.menus .choix-plat .icone_validation_check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* Couleur icone */
+}
+
+.animation_check,
+.icone_validation_check {
+    transition-duration: 0.4s;
+}
+
+.menus .choix-plat .accompagnement_plat {
+    transition: width 0.4s, text-overflow 0.4s, margin-right 0.4s, overflow 0.4s;
+}
+
+.menus .choix-plat .accompagnement_plat {
+    transition: width 0.4s, text-overflow 0.4s;
+}
+
+.menus .choix-plat .prix_plat_menu {
+    transition: margin-right 0.4s;
+}
+
+.menus .choix-plat .icone_validation_check {
+    transform: rotate(360deg);
+}
+
+.plat:hover .animation_check {
+    transform: translateX(0px);
+}
+
+.plat:hover .icone_validation_check {
+    transform: rotate(0deg);
+}
+
+.plat:hover .accompagnement_plat {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.plat:hover .prix_plat_menu {
+    margin-right: 60px;
+}
+
+@keyframes decalage_carte {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-45px);
+        opacity: 1;
+    }
+}
