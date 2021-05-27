@@ -88,17 +88,16 @@ header i {
     font-weight: bold;
     line-height: 1.8rem;
     width: calc(100% - 60px);
-}
-
-.menus .choix-plat .accompagnement_plat {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.menus .choix-plat .accompagnement_plat {
-    white-space: nowrap;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menus .choix-plat .accompagnement_plat {
+    width: calc(100% - 60px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .menus .choix-plat .prix_plat_menu {
@@ -128,4 +127,10 @@ header i {
     font-size: 1rem;
     color: white;
     cursor: pointer;
+}
+
+.button_menu:hover {
+    box-shadow: 5px 5px 3px white;
+    transform: scale(1.01);
+    background: linear-gradient(#df79c2, #9f6bdd);
 }

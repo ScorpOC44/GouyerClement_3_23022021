@@ -75,6 +75,7 @@
 .coeur2:hover {
     transition: transform 0.20s ease-in-out;
     animation: aggrandir 0.20s;
+    -webkit-text-fill-color: transparent;
 }
 
 .coeur2:hover+.coeur1 {

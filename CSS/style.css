@@ -57,6 +57,12 @@ header {
     cursor: pointer;
 }
 
+.choix button:hover {
+    box-shadow: 5px 5px 3px white;
+    transform: scale(1.1);
+    background: linear-gradient(#df79c2, #9f6bdd);
+}
+
 
 /* FONCTIONNEMENT */
 
@@ -144,6 +150,11 @@ header {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.20);
 }
 
+.restaurants .cartes .carte:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.10);
+}
+
 .restaurants .cartes .carte_photo {
     position: relative;
     overflow: hidden;
@@ -190,9 +201,9 @@ header {
     right: 15px;
     width: 80px;
     height: 30px;
-    font-size: 1rem;
-    font-weight: 800;
+    color: rgb(107, 105, 105);
     background-color: #99e2d0;
+    border-radius: 1px;
 }
 
 
