@@ -59,7 +59,7 @@ header {
 
 .choix button:hover {
     box-shadow: 5px 5px 3px white;
-    transform: scale(1.1);
+    transform: scale(1.01);
     background: linear-gradient(#df79c2, #9f6bdd);
 }
 
@@ -70,6 +70,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 15%;
+    margin-top: 20px;
 }
 
 .fonctionnement h2 {
@@ -88,6 +89,13 @@ header {
     border-radius: 1rem;
     box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.fonctionnement .fonctionnement_btn1:hover,
+.fonctionnement_btn2:hover,
+.fonctionnement_btn3:hover {
+    box-shadow: 5px 5px 3px rgb(199, 196, 196);
+    transform: scale(1.01);
 }
 
 .fonctionnement button {
