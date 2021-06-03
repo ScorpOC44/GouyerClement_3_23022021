@@ -133,5 +133,5 @@ header i {
 .button_menu:hover {
     box-shadow: 5px 5px 3px white;
     transform: scale(1.01);
-    background: linear-gradient(#df79c2, #9f6bdd);
+    background: linear-gradient(#fcade5, #caa5f7);
 }
