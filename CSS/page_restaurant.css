@@ -48,7 +48,7 @@ header i {
     font-weight: lighter;
     font-size: 1.5rem;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 0rem;
 }
 
 .menus .header_menu .animation_coeur_menu {
@@ -89,7 +89,7 @@ header i {
     line-height: 1.8rem;
     width: calc(100% - 60px);
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
 }
 
@@ -98,6 +98,7 @@ header i {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-size: 14.3px;
 }
 
 .menus .choix-plat .prix_plat_menu {

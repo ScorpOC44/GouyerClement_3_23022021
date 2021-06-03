@@ -60,7 +60,7 @@ header {
 .choix button:hover {
     box-shadow: 5px 5px 3px white;
     transform: scale(1.01);
-    background: linear-gradient(#df79c2, #9f6bdd);
+    background: linear-gradient(#f19ad9, #be8ff8);
 }
 
 
